@@ -8,10 +8,10 @@ $host = 'localhost';
 $user = 'root';
 
 //database user password
-$pass = 'root';
+$pass = '';
 
 // database name
-$database = '';
+$database = 'proyek_basisdata';
 
 /* connect to MySQL database */
 $conn = mysqli_connect($host, $user, $pass, $database);
@@ -21,5 +21,4 @@ mysqli_select_db($conn, $database);
 if($conn === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 } 
-
 ?>
