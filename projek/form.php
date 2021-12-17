@@ -1,36 +1,34 @@
 <?php
-require 'config.php';
+include "config.php";
     if(isset($_POST["submit"])){
         //ambil data dari form
         $nama = $_POST["nama"];
         $alamat = $_POST["alamat"];
         $nomor_hp = $_POST["nomor_hp"];
-        $jenis_barang = $_POST["jenis_barang"];
+        $nama_produk = $_POST["nama_produk"];
         $berat_barang = $_POST["berat_barang"];
         $harga_barang = $_POST["harga_barang"];
         $tanggal_panen = $_POST["tanggal_panen"];
 
 
         //query insert data
-        $query1 = "INSERT INTO petani (id_petani, nama, alamat, nomor_hp)
+        $query1= "INSERT INTO produk
                     VALUES
-                    ('','$nama','$alamat','$nomor_hp')";
-        $query2= "INSERT INTO barang (id_barang, jenis_barang, tanggal_panen, berat_barang, harga_barang)
-                    VALUES
-                    ('','$jenis_barang','$tanggal_panen','$berat_barang','$harga_barang')";
+                    ('','$nama_produk', '$berat_barang', '$tanggal_panen','$harga_barang')";
+        $query2 = "INSERT INTO petani 
+        VALUES
+        ('', '$nama_produk', '$nama', '$alamat', '$nomor_hp')";
                     
-                
-                
-        mysqli_query($conn, $query1); 
-        mysqli_query($conn, $query2);  
-        
-        if( $query1 == TRUE && $query2 == TRUE ) {
-            // kalau berhasil alihkan ke halaman index.php dengan status=sukses
-            header('Location: listpetani.php?status=sukses');
+        $cek1 = mysqli_query($conn,$query1);      
+        $cek2 = mysqli_query($conn,$query2);  
+        if( $cek1 AND $cek2 ) {
+            // if ($cek1 == TRUE) {
+                header('Location: listpetani.php?status=sukses+ditambah');
+            // }
         } else {
-            // kalau gagal alihkan ke halaman indek.ph dengan status=gagal
-            header('Location: listpetani.php?status=gagal');
+            header('Location: listpetani.php?status=gagal+ditambah');
         }
+    
     }
 ?>
 <!DOCTYPE html>
@@ -69,8 +67,8 @@ require 'config.php';
                 </li>
                 <li>
                     <div class="mb-3">
-                    <label for="jenis_barang" >Jenis Barang :</label>
-                    <select name="jenis_barang" class="form-select mb-3" required>
+                    <label for="nama_produk" >Jenis Barang :</label>
+                    <select name="nama_produk" class="form-select mb-3" required>
                         <optgroup label="Buah">
                                 <option value=semangka>Semangka</option>
                                 <option value=melon>Melon</option>
