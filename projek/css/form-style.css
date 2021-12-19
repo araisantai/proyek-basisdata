@@ -12,7 +12,7 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #01cf80, #016585);
+  background: #0ab68b;
 }
 
 .container {
@@ -41,7 +41,7 @@ h1.title {
   bottom: 0;
   height: 5px;
   width: 40px;
-  background: linear-gradient(135deg, #01cf80, #016585);
+  background: #0ab68b;
 }
 
 .container form ul {
@@ -59,25 +59,32 @@ form ul li {
 
 .mb-3 input {
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #0ab68b;
   border-bottom-width: 2px;
 }
 .form-select.mb-3 {
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #0ab68b;
   border-bottom-width: 2px;
 }
 .mb-3 input:required:valid {
-  border-color: #016585;
+  border-color: #0ab68b;
 }
 
 .form-select.mb-3:required:valid {
-  border-color: #016585;
+  border-color: #0ab68b;
 }
 
-.btn.btn-success {
+.btn.btn-success{
   width: 100%;
-  background: linear-gradient(135deg, #01cf80, #016585);
+  background: #0ab68b;
+  opacity: 0.8;
+}
+
+.btn.btn-success:hover{
+  width: 100%;
+  background: #0ab68b;
+  opacity: 1;
 }
 
 @media (max-width: 584px) {
