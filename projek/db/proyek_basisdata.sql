@@ -25,7 +25,7 @@ CREATE TABLE `petani` (
   `petani_produk` varchar(255) NOT NULL,
   `nama` varchar(255) NOT NULL,
   `alamat` text NOT NULL,
-  `nomor_hp` int(12) NOT NULL,
+  `nomor_hp` varchar(20) NOT NULL,
   CONSTRAINT petani_ID_PK PRIMARY KEY(id_petani)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
