@@ -36,14 +36,14 @@ include "config.php";
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/form-style.css">
         <title>Formulir Petani</title>
         
     </head>
     <body>
         <div class="container">
         <div class="title">
-        <h1 class="tittle">Tambah Data Petani</h1>
+        <h1 class="title">Tambah Data Petani</h1>
         </div>
         <form action="" method="POST">
             <ul>
