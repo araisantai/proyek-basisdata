@@ -28,17 +28,18 @@ if (isset($_POST['ubah'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <title>Document</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/edit-style.css">
+        <title>Formulir Ubah Data Petani</title>
 </head>
 
 <body>
+    <div class="container">
     <div class="title">
-        <h1 class="tittle">Edit Data Petani</h1>
+        <h1 class="title">Edit Data Petani</h1>
     </div>
-    <form action="" method="post">
-    <fieldset>
+    <form action="" method="POST">
     <input type="hidden" name="id" value="<?= $edit["id_petani"]; ?>">
             <ul>
                 <li>
@@ -60,13 +61,10 @@ if (isset($_POST['ubah'])) {
                     </div>
                 </li>
                 <div class="mb-3">
-                    <button type="submit" class="btn btn-success" name="ubah">ubah data</button>
+                    <button type="submit" class="btn btn-success" name="ubah">Ubah data</button>
                 </div>
-                </fieldset>
-                <?php 
-                
-                ?>
         </form>
+        </div>
         </div>
     </body>
 </html>
