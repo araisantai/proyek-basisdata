@@ -5,19 +5,21 @@ include "navigation/header.php"
 
     <!-- show tabel -->
     <br><br>
-    <h1 class="text-center">Daftar Penjualan</h1>
+    <h1 class="list-title">Daftar Penjualan</h1>
 
-    <table class="table table-striped table-bordered" style="padding-top: 2rem">
-      <thead class="thead-dark">
+    <div class="row justify-content-center">
+    <div class="col-auto">
+    <table>
+      <thead>
         <tr class="text-center">
-          <th scope="col">no</th>
-          <th scope="col">nama</th>
-          <th scope="col">jenis penjualan</th>
-          <th scope="col">produk yang dibeli</th>
+          <th scope="col">No</th>
+          <th scope="col">Nama</th>
+          <th scope="col">Jenis penjualan</th>
+          <th scope="col">Produk yang dibeli</th>
           <th scope="col">Berat pembelian/Kg</th>
-          <th scope="col">total harga/Rp</th>
-          <th scope="col">petani yang menjual</th>
-          <th scope="col">tanggal pembelian</th>
+          <th scope="col">Total harga/Rp</th>
+          <th scope="col">Petani yang menjual</th>
+          <th scope="col">Tanggal pembelian</th>
         </tr>
       </thead>
       <tbody>
@@ -55,6 +57,8 @@ include "navigation/header.php"
 		?>
       </tbody>
     </table>
+    </div>
+    </div>
     <!-- end of tabel -->
 
 
