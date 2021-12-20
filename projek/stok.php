@@ -25,18 +25,32 @@ die("gagal mengubah..");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/stok-style.css">
+        <title>Tambah Stok</title>
+</head>
 </head>
 <body>
+    <div class="container">
+        <h2>Tambah Stok Kamu</h2>
+        <form action="" method="post">
+        <ul>
+            <li>
+                <div class="stok">
+                    <input type="float" name="stok" id="stok" value="<?= $edit["berat_barang"]; ?>">
+                </div>
+            </li>
+            <br>
+            <li>
+                <div class="stok">
+                    <button type="submit" class="btn btn-success" name="tambah">Tambah</button>
+                </div>
+            </li>
+        </ul>   
+        </form>
+
+    </div>
     
-
-<h2>Tambah Stok Kamu</h2>
-<form action="" method="post">
-    <input type="number" name="stok" id="stok" value="<?= $edit["berat_barang"]; ?>">
-    <br><br>
-    <input type="submit" name="tambah" value="tambah!">
-</form>
-
 </body>
 </html>
