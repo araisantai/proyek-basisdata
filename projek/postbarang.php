@@ -12,18 +12,26 @@ if (isset($_GET['nama_barang'])) {
 <html lang="en">
 
 <head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/liststyle.css">
 	<title><?= $produk; ?></title>
 </head>
 <body>
 
-	<h1><?= $produk; ?></h1>
-    <p>Petani yang memiliki produk <?= $produk; ?>:</p>
-    <table border="1">
+	<div class="produc-title">
+	<h1 class="list-title"><?= $produk; ?></h1>
+    <p class="text-center">Petani yang memiliki produk <?= $produk; ?>:</p>
+	</div>
+
+	<div class="row justify-content-center">
+    <div class="col-auto">
+	<table>
 	<thead>
-		<tr>
-            <th scope="col">nama</th>
-            <th scope="col">alamat</th>
-            <th scope="col">no. Hp</th>
+		<tr class="text-center">
+            <th scope="col">Nama</th>
+            <th scope="col">Alamat</th>
+            <th scope="col">No. Hp</th>
             <th scope="col">Banyak Barang/kg</th>
             <th scope="col">Tanggal panen</th>
             <th scope="col">Harga Barang/Rp</th>
@@ -45,6 +53,8 @@ if (isset($_GET['nama_barang'])) {
 		?>
     </tbody>
 	</table>
+	</div>
+    </div>
 
 
 </body>
