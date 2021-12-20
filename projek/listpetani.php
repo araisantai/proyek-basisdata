@@ -5,7 +5,7 @@ include "navigation/header.php";
 
     <!-- show tabel -->
     <br><br>
-    <h1 class="text-center">Daftar Petani</h1>
+    <h1 class="list-title">Daftar Petani</h1>
     <?php 
     
     if (isset($_GET['status'])) {
@@ -15,13 +15,15 @@ include "navigation/header.php";
       ";
     }
     ?>
-    <table class="table table-striped table-bordered" style="padding-top: 2rem">
-      <thead class="thead-dark">
+    <div class="row justify-content-center">
+    <div class="col-auto">
+    <table>
+      <thead>
         <tr class="text-center">
-          <th scope="col">no</th>
-          <th scope="col">nama</th>
-          <th scope="col">alamat</th>
-          <th scope="col">no. Hp</th>
+          <th scope="col">No</th>
+          <th scope="col">Nama</th>
+          <th scope="col">Alamat</th>
+          <th scope="col">No. Hp</th>
           <th scope="col">Barang yang dijual</th>
           <th scope="col" colspan='2'>Banyak Barang/kg</th>
           <th scope="col" colspan='2'>Tindakan</th>
@@ -52,15 +54,15 @@ include "navigation/header.php";
 
 			echo "<td>".$produk['berat_barang']."</td>";
       echo "<td class='text-center'>";
-			echo "<a href='stok.php?id=".$produk['id_produk']."'>Tambah Stok</a>";
+			echo "<a class='tambah' href='stok.php?id=".$produk['id_produk']."'>Tambah Stok</a>";
 			echo "</td>";
 
       // edit data dan hapus data
       echo "<td class='text-center'>";
-			echo "<a href='edit.php?id=".$petani['id_petani']."'>Edit data</a>";
+			echo "<a class='edit' href='edit.php?id=".$petani['id_petani']."'>Edit data</a>";
 			echo "</td>";
       echo "<td class='text-center'>";
-			echo "<a href='hapus.php?id_petani=".$petani['id_petani']."'>Hapus</a>";
+			echo "<a class='hapus' href='hapus.php?id_petani=".$petani['id_petani']."'>Hapus</a>";
 			echo "</td>";
 			echo "</tr>";
 
@@ -70,11 +72,14 @@ include "navigation/header.php";
 		?>
       </tbody>
     </table>
+    </div>
+    </div>
+
     <!-- end of tabel -->
 
 
     <!-- button tambah petani baru -->
-    <div class="container">
+    <div class="bttn">
       <div class="row">
         <div class="col text-center">
           <a class="btn btn-primary btn-lg" href="form.php" role="button">Gabung jadi petani baru >></a>
