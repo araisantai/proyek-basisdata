@@ -35,13 +35,10 @@ include "navigation/header.php";
     $query2 = mysqli_query($conn, "SELECT * FROM produk");
     ;
     
-		// $query = mysqli_query($db, $sql);
 
-		// penambahan variable no =1
 		$no=1;
 		while($petani = mysqli_fetch_array($query)){
 			echo "<tr>";
-			// varibel no++
 			echo "<td class='text-center'>".$no++."</td>";	
 			"<td>".$petani['id_petani']."</td>";
 			echo "<td>".$petani['nama']."</td>";
@@ -49,7 +46,6 @@ include "navigation/header.php";
 			echo "<td>".$petani['nomor_hp']."</td>";
 			$produk = mysqli_fetch_array($query2);
 			echo "<td>".$produk['nama_produk']."</td>";
-			// linked to updatestok.php
       
 
 			echo "<td>".$produk['berat_barang']."</td>";
@@ -67,7 +63,6 @@ include "navigation/header.php";
 			echo "</tr>";
 
 			}
-
 
 		?>
       </tbody>

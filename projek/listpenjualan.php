@@ -27,13 +27,10 @@ include "navigation/header.php"
 		$query = mysqli_query($conn, "SELECT * FROM data_penjualan");
         $query2 = mysqli_query($conn, "SELECT id_petani,nama FROM petani");
         
-        
 
-		// penambahan variable no =1
 		$no=1;
 		while($data = mysqli_fetch_array($query)){
 			echo "<tr>";
-			// varibel no++
 			echo "<td class='text-center'>".$no++."</td>";	
 			"<td>".$data['id_penjualan']."</td>";
 			echo "<td>".$data['nama_pembeli']."</td>";

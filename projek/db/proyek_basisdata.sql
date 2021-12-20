@@ -57,15 +57,15 @@ INSERT INTO `barang` (`id_barang`, `jenis_barang`, `nama_barang`) VALUES
 
 INSERT INTO `produk` (`id_produk`, `nama_produk`, `berat_barang`, `tanggal_panen`, `harga_barang`) VALUES
 (1, 'semangka', 100, '2005-09-18', 10000),
-(2, 'pir', 10, '2005-09-18', 10000),
-(3, 'padi', 10, '2005-09-18', 10000),
-(4, 'kangkung', 10, '2005-09-18', 10000);
+(2, 'pir', 50, '2005-09-18', 10000),
+(3, 'padi', 30, '2005-09-18', 10000),
+(4, 'kangkung', 20, '2005-09-18', 10000);
 
 INSERT INTO `petani` (`id_petani`, `petani_produk`, `nama`, `alamat`, `nomor_hp`) VALUES
-(1, 'semangka', 'qais', 'alamat', 628912345),
-(2, 'pir', 'athifah', 'alamat', 628912345),
-(3, 'padi', 'aul', 'alamat', 628912345),
-(4, 'kangkung', 'faris', 'alamat', 628912345);
+(1, 'semangka', 'qais', 'alamat', 62891234567),
+(2, 'pir', 'athifah', 'alamat', 62891234568),
+(3, 'padi', 'aul', 'alamat', 62891234570),
+(4, 'kangkung', 'faris', 'alamat', 62891234571);
 
 ALTER TABLE petani
 ADD CONSTRAINT produk_num_FK
@@ -74,7 +74,7 @@ FOREIGN KEY (petani_produk) REFERENCES produk(nama_produk);
 INSERT INTO `data_penjualan` (`id_penjualan`, `nama_pembeli`, `jenis_penjualanID`, `produk_penjualan`, `berat_pembelian`, `total_harga`, `nama_petaniID`, `tanggal_pembelian`) VALUES
 (1, 'pembeli1', 1, 'semangka', 10, 10000, 1, '2005-09-18'),
 (2, 'pembeli2', 4, 'pir', 10, 10000, 2, '2005-09-18'),
-(2, 'pembeli3', 4, 'pir', 10, 10000, 2, '2005-09-18');
+(3, 'pembeli3', 4, 'pir', 10, 10000, 2, '2005-09-18');
 
 ALTER TABLE data_penjualan
 ADD CONSTRAINT penjualan_barang_FK 

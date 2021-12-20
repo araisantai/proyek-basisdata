@@ -1,7 +1,6 @@
 <?php
 include "config.php";
     if(isset($_POST["submit"])){
-        //ambil data dari form
         $nama = $_POST["nama"];
         $alamat = $_POST["alamat"];
         $nomor_hp = $_POST["nomor_hp"];
@@ -10,8 +9,6 @@ include "config.php";
         $harga_barang = $_POST["harga_barang"];
         $tanggal_panen = $_POST["tanggal_panen"];
 
-
-        //query insert data
         $query1= "INSERT INTO produk
                     VALUES
                     ('','$nama_produk', '$berat_barang', '$tanggal_panen','$harga_barang')";
@@ -22,9 +19,7 @@ include "config.php";
         $cek1 = mysqli_query($conn,$query1);      
         $cek2 = mysqli_query($conn,$query2);  
         if( $cek1 AND $cek2 ) {
-            // if ($cek1 == TRUE) {
                 header('Location: listpetani.php?status=sukses+ditambah');
-            // }
         } else {
             header('Location: listpetani.php?status=gagal+ditambah');
         }
