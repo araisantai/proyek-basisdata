@@ -46,7 +46,6 @@ include "navigation/header.php"
 			echo "<td>".$data['berat_pembelian']."</td>";
 			echo "<td>".$data['total_harga']."</td>";
             $petani = mysqli_fetch_array($query2);
-            var_dump($petani);
             if ($petani['id_petani'] == $data['nama_petaniID']) {
                 echo "<td>".$petani['nama']."</td>";
             }
