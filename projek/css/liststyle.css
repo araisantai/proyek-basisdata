@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap");
+
+* {
+    font-family: "poppins", sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px #e1e5ee;
+    background-color: white;
+    overflow: hidden;
+}
+thead {
+    box-shadow: 0 5px 10px #e1e5ee;
+}
+
+th {
+    padding: 1rem 0.7rem;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f6fb
+    ;
+}
+td {
+    padding: 1.2rem 2rem;
+    font-size: 0.7rem;
+}
+
+.hapus {
+    border-radius: 0.2rem;
+    background-color: #f46d75;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.hapus:hover {
+    background-color: #ba0001;
+    text-decoration: none;
+    color: #f7b4bb;
+}
+
+.edit {
+    border-radius: 0.2rem;
+    background-color: #98dc8c;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.edit:hover {
+    background-color: #7ab070;
+    text-decoration: none;
+    color: #eaf8e8
+    ;
+}
+
+.tambah {
+    border-radius: 0.2rem;
+    background-color: #10b48c;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.tambah:hover {
+    background-color: #0b7e62;
+    text-decoration: none;
+    color: #cff0e8;
+}
+
+.bttn {
+    padding-top: 20px;   
+}
+
+a.btn.btn-primary.btn-lg {
+    background: #0ab68b;
+    border: none;
+}
+
+.product-box {
+    width: 300px;
+    justify-content: center;
+
+}
+
+.product-box {
+    width: 300px;
+    border-bottom: 20px solid #0bb68c;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-box-title {
+    color: #fff;
+    background: #0bb68c;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+.box-title {
+    list-style: none;
+}
+.list-product {
+    position: relative;
+    background: #fff;
+}
+
+.product {
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0,0,0,.1);
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+
+.product:hover {
+    transform: scale(1.1);
+    z-index: 100;
+    background: #92debb;
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+    color: #fff;
+    text-decoration: none;
+}
+
+.product-name {
+    text-decoration: none;
+    color: black;
+}
+
+.product-name:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.list-title {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
