@@ -4,14 +4,21 @@ include "navigation/header.php";
 ?>
 
     <!-- jumbotron -->
-    <section class="jumbotron" style="padding-top: 2rem">
-      <h1 class="display-4">Hello, world!</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <hr class="my-4" />
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    </section>
+    <div class="bg"></div>
+    <div class="index-box">
+      <div class="project-title">
+        <h1>Agri Helper</h1>
+      </div>
+      <div class="project-description">
+        <p>Agri Helper menjadi web layanan bagi para petani maupun pemasok untuk mendistribusikan barangnya secara lebih mudah. (Nama aplikasi) memberikan informasi seputar hasil tani dengan cepat dan mudah. Jelajahi kebutuhan buah-buahan dan sayur-sayuran yang diperlukan dan temukan para petani melalui Agri Helper!</p>
+      </div>
+      <div class="col text-center">
+      <a class="btn btn-primary btn-lg" href="listpetani.php">Get Started!</a>
+    </div>
+    </div>
+    </div>
     <!-- akhir jumbotron -->
-
+    
 <?php 
 include "navigation/footer.php";
 
