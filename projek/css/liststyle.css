@@ -37,6 +37,7 @@ td {
     text-align: center;
     color: white;
     transition-duration: 0.4s;
+    text-decoration: none;
 }
 
 .hapus:hover {
