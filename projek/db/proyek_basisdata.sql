@@ -72,8 +72,9 @@ ADD CONSTRAINT produk_num_FK
 FOREIGN KEY (petani_produk) REFERENCES produk(nama_produk);
 
 INSERT INTO `data_penjualan` (`id_penjualan`, `nama_pembeli`, `jenis_penjualanID`, `produk_penjualan`, `berat_pembelian`, `total_harga`, `nama_petaniID`, `tanggal_pembelian`) VALUES
-(1, 'pembeli', 1, 'semangka', 10, 10000, 1, '2005-09-18'),
-(2, 'cekname', 4, 'pir', 10, 10000, 2, '2005-09-18');
+(1, 'pembeli1', 1, 'semangka', 10, 10000, 1, '2005-09-18'),
+(2, 'pembeli2', 4, 'pir', 10, 10000, 2, '2005-09-18'),
+(2, 'pembeli3', 4, 'pir', 10, 10000, 2, '2005-09-18');
 
 ALTER TABLE data_penjualan
 ADD CONSTRAINT penjualan_barang_FK 

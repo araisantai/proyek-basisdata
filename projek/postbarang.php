@@ -26,6 +26,7 @@ if (isset($_GET['nama_barang'])) {
 
 	<div class="row justify-content-center">
     <div class="col-auto">
+	<!-- start of table -->
 	<table>
 	<thead>
 		<tr class="text-center">
@@ -55,7 +56,7 @@ if (isset($_GET['nama_barang'])) {
 	</table>
 	</div>
     </div>
-
+	<!-- end of table -->
 
 </body>
 </html>

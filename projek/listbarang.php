@@ -45,10 +45,8 @@ $query2 = mysqli_query($conn, "SELECT nama_barang FROM barang WHERE jenis_barang
 	</div>	
 	</ul>
 	
-
-	
 	</div>
-
+<!-- end of content -->
 <?php 
 include "navigation/footer.php";
 
