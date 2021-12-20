@@ -8,32 +8,41 @@ $query2 = mysqli_query($conn, "SELECT nama_barang FROM barang WHERE jenis_barang
 	
 
 	<div class="container">
-	<br><br><br>
-	<h1>Produk yang tersedia</h1>
+	<br>
+	<h1 class="list-title">Produk yang tersedia</h1>
 	<ul>
-		<li>Buah-buahan
-			<ul>
+	<div class="row">
+	<div class ="col p-2">
+		<div class="product-box">
+		<li class="box-title"><h2 class="product-box-title">Buah-buahan</h2>
+			
 				<?php 
 				while ($buah = mysqli_fetch_assoc($query1)) {
-					echo"<li>";
-					echo"<a href='postbarang.php?nama_barang=".$buah['nama_barang']."'>".$buah['nama_barang']."</a>";
+					echo"<li class='product'>";
+					echo"<a class='product-name' href='postbarang.php?nama_barang=".$buah['nama_barang']."'>".$buah['nama_barang']."</a>";
 					echo"</li>";
 				}
 				?>
-				<br><br>
-			</ul>
+			
 		</li>
-		<li>Sayuran
-			<ul>
+		</div>
+		</div>
+		<div class ="col p-2">
+		<div class="product-box">
+		<li class="box-title"><h2 class="product-box-title">Sayuran</h2>
+			
 				<?php 
 				while ($sayur = mysqli_fetch_assoc($query2)) {
-					echo "<li>";
-					echo"<a href='postbarang.php?nama_barang=".$sayur['nama_barang']."'>".$sayur['nama_barang']."</a>";
+					echo "<li class='product'>";
+					echo"<a class='product-name' href='postbarang.php?nama_barang=".$sayur['nama_barang']."'>".$sayur['nama_barang']."</a>";
 					echo"</li>";
 				}
 				?>
-			</ul>
+			
 		</li>
+		</div>
+		</div>
+	</div>	
 	</ul>
 	
 
