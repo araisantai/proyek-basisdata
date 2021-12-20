@@ -1,6 +1,6 @@
      <!-- footer -->
     <footer class="text-white text-center fixed-bottom" style = "padding-top : 8px; background-color : #0ab68b">
-      <p style = "font-size : 16px">2021 - Kelompok </p>
+      <p style = "font-size : 16px">2021 - Kelompok 9</p>
     </footer>
     <!-- akhir footer -->
 
