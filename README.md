@@ -4,7 +4,7 @@ Agri Helper menjadi web layanan bagi para petani maupun pemasok untuk mendistrib
 
 # Anggota Kelompok
 
-Athifah Muflihah (G6401201033)
-Aulia Rochman (G6401201018)
-Faris Bayu Setyawan (G6401201088)
-Qais Jabbar Ihkamuddin (G6401201120)
+1. Athifah Muflihah (G6401201033)
+2. Aulia Rochman (G6401201018)
+3. Faris Bayu Setyawan (G6401201088)
+4. Qais Jabbar Ihkamuddin (G6401201120)
